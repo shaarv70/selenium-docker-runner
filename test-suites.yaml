@@ -14,7 +14,7 @@ services:
   flight-reservation:
       image: shaarv70/selenium:latest
       environment:
-        - BROWSER=chrome
+        - BROWSER=firefox
         - HUB_HOST=hub
         - THREAD_COUNT=4
         - TEST_SUITE=flight-reservation.xml
