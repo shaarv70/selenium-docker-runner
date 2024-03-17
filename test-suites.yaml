@@ -1,7 +1,7 @@
 version: '3'
 services:
   vendor-portal:
-    image: shaarv70/selenium
+    image: shaarv70/selenium:latest
     environment:
     - BROWSER=chrome
     - HUB_HOST=hub
@@ -10,7 +10,7 @@ services:
     volumes:
     - ./output/vendor-portal:/home/selenium-docker/test-output
   flight-reservation:
-      image: shaarv70/selenium
+      image: shaarv70/selenium:latest
       environment:
         - BROWSER=chrome
         - HUB_HOST=hub
