@@ -3,11 +3,7 @@ services:
   vendor-portal:
     image: shaarv70/selenium:latest
     environment:
-<<<<<<< HEAD
     - BROWSER
-=======
-    - BROWSER=chrome
->>>>>>> e63ab20ad854cb2f17423ce30baec193f110a40a
     - HUB_HOST=hub
     - THREAD_COUNT=3
     - TEST_SUITE=vendor-portal.xml
@@ -18,11 +14,7 @@ services:
   flight-reservation:
       image: shaarv70/selenium:latest
       environment:
-<<<<<<< HEAD
         - BROWSER
-=======
-        - BROWSER=chrome
->>>>>>> e63ab20ad854cb2f17423ce30baec193f110a40a
         - HUB_HOST=hub
         - THREAD_COUNT=4
         - TEST_SUITE=flight-reservation.xml

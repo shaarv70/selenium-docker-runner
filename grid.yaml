@@ -8,11 +8,7 @@ services:
     depends_on:
     - hub
     deploy:
-<<<<<<< HEAD
       replicas: 0
-=======
-      replicas: 2
->>>>>>> e63ab20ad854cb2f17423ce30baec193f110a40a
     env_file: .env
   firefox:
     image: selenium/node-firefox:4.10
