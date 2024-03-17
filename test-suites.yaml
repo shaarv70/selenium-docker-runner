@@ -16,5 +16,7 @@ services:
         - HUB_HOST=hub
         - THREAD_COUNT=4
         - TEST_SUITE=flight-reservation.xml
+      deploy:
+        replicas: 0
       volumes:
       - ./output/flight-reservation:/home/selenium-docker/test-output
