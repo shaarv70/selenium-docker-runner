@@ -15,7 +15,7 @@ pipeline{
           }
            stage('Run Tests'){
                 steps{
-                     bat "echo 'taget/docker/resources/test-data/flight-reservation/*'"
+
                      bat "docker-compose -f test-suites.yaml up"
               }
 
