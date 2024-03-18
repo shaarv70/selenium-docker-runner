@@ -19,7 +19,7 @@ pipeline{
                      bat "docker-compose -f test-suites.yaml up --pull=always"
                      script{
                          if(fileExists('output/flight-reservation/testng-failed.xml') ||fileExists('output/flight-reservation/testng-failed.xml'))
-                         error('failed tests found'
+                         error('failed tests found')
 
                      }
               }
