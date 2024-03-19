@@ -10,6 +10,11 @@ pipeline{
           stage('Start Grid'){
               steps{
                    bat "docker-compose -f grid.yaml up  --scale ${params.BROWSER}=1 -d"
+                   script{
+                       if(fileExists('output/flight-reservation/testng-failed.xml') ||fileExists('output/flight-reservation/testng-failed.xml'))
+                          error('failed tests found')
+
+                                        }
               }
 
           }
